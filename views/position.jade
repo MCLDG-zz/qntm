@@ -1,0 +1,38 @@
+extends layout-position
+
+block content
+    h1= title
+    p Consolidated Position
+
+    // Wrapper
+    #wrapper
+
+        // POSITION LIST
+        h2 Position List
+        #positionList
+            #container
+            table#container.responsive-table
+                thead
+                    th Symbol
+                    th Count
+                    th TotalPrice
+                tbody
+        // /POSITION LIST
+
+        // DEAL INFO
+        #dealInfoList
+            h2 Deal Info
+            #container
+            table#container.responsive-table
+                thead
+                    th OrderID
+                    th LoginID
+                    th Symbol
+                    th Type
+                    th Volume
+                    th ClosePrice
+                tbody
+        // /DEAL INFO
+
+
+    // /WRAPPER
